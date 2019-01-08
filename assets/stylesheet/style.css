@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,700');
+body, html{
+	padding:0px;
+	margin:0px;
+	font-family: 'Quicksand', sans-serif;
+	background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+.wrapper{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.wrapper header{
+	text-align: center;
+	padding:20px;
+	margin-bottom: 40px;
+}
+.wrapper header h1{
+	margin:0px;
+	font-size: 2.6rem;
+	color:#fff;
+}
+.content{
+	width: 100%;
+	max-width: 700px;
+	padding:20px;
+	box-sizing: border-box;
+	
+}
+.content form{
+	margin:0px;
+	margin-bottom: 40px;
+}
+.content form label{
+	font-weight: 600;
+	display: block;
+	color:#707070;
+	margin-bottom: 15px;
+}
+.content form input[type=text]{
+	width: 80%;
+	height: 50px;
+	padding: 15px;
+	box-sizing: border-box;
+	border-radius: 7px 0px 0px 7px;
+	border: 0px;
+	vertical-align: top;
+}
+.content form input[type=submit]{
+	vertical-align: top;
+	color:#fff;
+	font-size: 1.2rem;
+	width: 20%;
+	border-radius: 0px 7px 7px 0px;
+	height: 50px;
+	background-color: #4F86C6;
+	border: 0px;
+	margin-left: -5px;
+	cursor: pointer;
+}
+.content .result{
+	display: none;
+	padding:20px;
+	box-sizing: border-box;
+	background-color: rgba(255, 255, 255, 0.1);
+	color:#707070;	
+	border-radius: 7px;
+}
+.content .result h2{
+	margin-top: 0px;
+	margin-bottom: 15px;
+	font-size: 2rem;
+}
+.content .result p{
+	margin-top: 0px;
+	margin-bottom: 15px;
+	font-weight: : 300;
+}
+.content .result p:last-child{
+	margin-bottom: 0px;
+}
+.content .result p label{
+	font-weight: 700;
+	margin-right: 10px;
+}
+.content .result p a{
+	color:#4F86C6;
+	text-decoration: none;
+}
+.content .result p a:hover, .content .result p a:focus{
+	text-decoration: underline;
+}
+.content .result.error{
+	background-color: rgba(241, 107, 111, 0.8);
+	color:#fff;
+}
